@@ -4,3 +4,4 @@
 yarn.lock
 src
 lib/__tests__
+coverage
