@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "mocha": true,
+        "jest": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "globals": {
+      "angular": 1,
+      "inject": 1,
+      "ngModule": 1
+    },
+    "rules": {
+        "react/display-name": 0,
+        "eqeqeq": "warn",
+        "indent": [
+            "warn"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "comma-spacing": [
+            "error", {
+                "before": false,
+                "after": true
+            }
+        ]
+    }
+}

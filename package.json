@@ -1,0 +1,42 @@
+{
+  "name": "tedious-friendly",
+  "version": "1.0.0",
+  "description": "tedious-friendly",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run test:jest && npm run test:lint",
+    "test:jest": "jest --coverage",
+    "test:watch": "jest --watch",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "tedious",
+    "tedious-connection-pool",
+    "tds",
+    "sql",
+    "microsoft",
+    "azure",
+    "sql server"
+  ],
+  "author": "Eric Zingeler",
+  "license": "ISC",
+  "dependencies": {
+    "tedious": "^1.14.0",
+    "tedious-connection-pool": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "jest": "^18.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eezing/tedious-friendly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eezing/tedious-friendly/issues"
+  },
+  "homepage": "https://github.com/eezing/tedious-friendly#readme"
+}
