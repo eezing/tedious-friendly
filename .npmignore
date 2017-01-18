@@ -1,6 +1,7 @@
 
 .babelrc
 .eslintrc
+.travis.yml
 yarn.lock
 src
 lib/__tests__
